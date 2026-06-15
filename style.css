@@ -1,218 +1,26 @@
-/* Import Google Fonts untuk tulisan cantik */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: 'Poppins', Arial, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    min-height: 100vh;
-    padding: 20px;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
 }
 
-/* Style untuk button */
 button {
-    padding: 12px 24px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 10px 20px;
+    background-color: #4CAF50;
     color: white;
     border: none;
     cursor: pointer;
     font-size: 16px;
-    font-weight: 600;
     margin: 5px;
-    border-radius: 30px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
 button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-    background: linear-gradient(135deg, #5a67d8 0%, #6b46a0 100%);
+    background-color: #45a049;
 }
 
-button:active {
-    transform: translateY(0);
-}
-
-/* Style untuk table utama */
 table {
     border-collapse: collapse;
-    margin: 20px auto;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    border-radius: 15px;
-    overflow: hidden;
 }
 
-/* Style untuk table border */
-table[border="2"], table[border="5"] {
-    background: white;
-    border-radius: 15px;
-}
-
-th {
-    padding: 15px;
-    background: white;
-}
-
-/* Style untuk link */
 a {
     text-decoration: none;
-}
-
-/* Style untuk marquee */
-marquee {
-    font-weight: bold;
-}
-
-/* Style untuk heading */
-h2, h3, h4, h5 {
-    color: #333;
-}
-
-h5 {
-    font-size: 18px;
-    color: #667eea;
-}
-
-/* Style untuk form */
-input, select, textarea {
-    padding: 10px 15px;
-    margin: 8px 0;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    font-family: 'Poppins', Arial, sans-serif;
-    transition: all 0.3s ease;
-    width: 100%;
-    max-width: 300px;
-}
-
-input:focus, select:focus, textarea:focus {
-    border-color: #667eea;
-    outline: none;
-    box-shadow: 0 0 10px rgba(102,126,234,0.3);
-}
-
-/* Style untuk card/kotak putih */
-.content-card {
-    background: white;
-    border-radius: 20px;
-    padding: 30px;
-    margin: 20px auto;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-    width: 75%;
-}
-
-/* Style untuk footer */
-table[border="2"]:last-child {
-    background: #333;
-    color: white;
-}
-
-table[border="2"]:last-child th {
-    color: white;
-    background: #333;
-    font-weight: normal;
-}
-
-/* Animasi fade in */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-body * {
-    animation: fadeIn 0.5s ease-out;
-}
-
-/* Style responsive untuk mobile */
-@media (max-width: 768px) {
-    table {
-        width: 95% !important;
-    }
-    
-    button {
-        padding: 8px 16px;
-        font-size: 12px;
-    }
-    
-    th img {
-        width: 50px !important;
-    }
-    
-    font[size="50"] {
-        font-size: 24px !important;
-    }
-}
-
-/* Style untuk gambar dalam table */
-th img {
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-}
-
-th img:hover {
-    transform: scale(1.05);
-}
-
-/* Style untuk link muat turun */
-a[download] {
-    background: #ff6b6b;
-    color: white;
-    padding: 8px 15px;
-    border-radius: 25px;
-    transition: all 0.3s ease;
-    display: inline-block;
-}
-
-a[download]:hover {
-    background: #ff4757;
-    transform: scale(1.05);
-}
-
-/* Style untuk table menu */
-table[border="5"] {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-    border: none !important;
-}
-
-table[border="5"] td {
-    background: transparent;
-    padding: 10px;
-}
-
-/* Style untuk content area */
-table[bgcolor="#e0e0e0"], table[bgcolor="#e8f5e9"] {
-    background: white !important;
-    border-radius: 15px;
-    padding: 20px;
-}
-
-/* Style scrollbar */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #764ba2;
 }
